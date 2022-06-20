@@ -1,0 +1,83 @@
+.hover {
+  color: gray !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+body {
+  background-color: rgb(237, 240, 243);
+  color: rgb(97, 59, 59);
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#title {
+  text-align: center;
+}
+
+header {
+  margin-left: 8rem;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  color: rgb(185, 3, 3);
+  font-weight: bolder;
+}
+header input:last-child {
+  margin-left: 8rem;
+}
+
+input {
+  border: none;
+  background-color: rgb(237, 240, 243);
+  font-family: inherit;
+}
+
+#start-btn {
+  padding: 0.75% 4%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border: none;
+  color: rgb(235, 81, 20);
+  font-size: 1.5rem;
+  background-color: rgb(237, 240, 243);
+}
+
+#start-btn:hover {
+  transform: scale(1.1);
+}
+#display {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  padding: 2rem;
+}
+
+#display div {
+  margin: 0;
+  padding: 1rem;
+  /* border: solid black 5px; */
+  background-color: rgb(237, 240, 243);
+  color: black;
+  font-size: 50px;
+  line-height: 85px;
+  text-align: center;
+}
+
+#display div:nth-child(3n+2) {
+  border-right: solid black 5px;
+  border-left: solid black 5px;
+}
+
+#display div:nth-child(4), div:nth-child(5), div:nth-child(6) {
+  border-top: solid black 5px;
+  border-bottom: solid black 5px;
+}
+
+#result {
+  font-size: x-large;
+  text-align: center;
+}
